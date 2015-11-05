@@ -17,7 +17,6 @@ class NetworkLatencyBenchmark(object):
 
         self.wifi_latency = []
         self.wifi_timeout = 0
-        self.print_status = True
 
     def run_test(self, n_sample=100):
         for n in xrange(n_sample):
@@ -26,8 +25,6 @@ class NetworkLatencyBenchmark(object):
             try:
                 ping_time = float(p[p.find('time=') + 5:p.find(' ms')])
                 self.wifi_latency.append(ping_time)
-                if self.print_status:
-                    print 'test:', n + 1, '/', n_sample, ', ping latency :', ping_time, 'ms'
 
             except:
                 self.wifi_timeout = self.wifi_timeout + 1
@@ -57,7 +54,6 @@ if __name__ == '__main__':
     
 
     network = NetworkLatencyBenchmark(ip,timeout)
-    network.print_status = False
 
     network.run_test(n_sample)
     network.get_results()
