@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+NetworkLatencyBenchmark	network_test.py	/^class NetworkLatencyBenchmark(object):$/;"	c
+PingTest	testunit.py	/^class PingTest(unittest.TestCase):$/;"	c
+__init__	network_test.py	/^    def __init__(self, ip, timeout=1200):$/;"	m	class:NetworkLatencyBenchmark
+get_results	network_test.py	/^    def get_results(self):$/;"	m	class:NetworkLatencyBenchmark
+ip	network_test.py	/^    ip = sys.argv[1]$/;"	v
+n_sample	network_test.py	/^    n_sample = int(sys.argv[2]) $/;"	v
+network	network_test.py	/^    network = NetworkLatencyBenchmark(ip,timeout)$/;"	v
+network_test	testunit.py	/^import network_test$/;"	i
+numpy	network_test.py	/^import numpy$/;"	i
+pexpect	network_test.py	/^import pexpect$/;"	i
+run_test	network_test.py	/^    def run_test(self, n_sample=100):$/;"	m	class:NetworkLatencyBenchmark
+sys	network_test.py	/^    import sys$/;"	i
+testPingDNS	testunit.py	/^    def testPingDNS(self):$/;"	m	class:PingTest
+testPingDNSCustomTimeout	testunit.py	/^    def testPingDNSCustomTimeout(self):$/;"	m	class:PingTest
+testPingNoDNS	testunit.py	/^    def testPingNoDNS(self):$/;"	m	class:PingTest
+testPingNoDNSCustomTimeout	testunit.py	/^    def testPingNoDNSCustomTimeout(self):$/;"	m	class:PingTest
+testPingWrongDNS	testunit.py	/^    def testPingWrongDNS(self):$/;"	m	class:PingTest
+testPingWrongNoDNS	testunit.py	/^    def testPingWrongNoDNS(self):$/;"	m	class:PingTest
+timeout	network_test.py	/^    timeout = int(sys.argv[3]) $/;"	v
+unittest	testunit.py	/^import unittest$/;"	i
