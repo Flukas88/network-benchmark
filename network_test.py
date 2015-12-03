@@ -44,8 +44,8 @@ class NetworkLatencyBenchmark(object):
 
 
 if __name__ == '__main__':
-    parser = OptionParser(usage="usage: %prog -h arg1 -s arg2 -t arg3 ")
-    parser.add_option('-h', help='host used to verify the latency', nargs=1, dest='host', type='string', default=False, action='store')
+    parser = OptionParser(usage="usage: %prog -i arg1 -s arg2 -t arg3 ")
+    parser.add_option('-i', help='host used to verify the latency', nargs=1, dest='host', type='string', default=False, action='store')
     parser.add_option('-s', help='Number of sample [default=5]', nargs=1, dest='sample', type='int', default=5, action='store')
     parser.add_option('-t', help='Timeout in milleseconds for network checking [default={}]'.format(100), nargs=1, dest='timeout', type='string', default=100, action='store')
     (options, args) = parser.parse_args()
