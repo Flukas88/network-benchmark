@@ -44,11 +44,6 @@ class NetworkLatencyBenchmark(object):
 
 
 if __name__ == '__main__':
-
-    if len(sys.argv) < 3:
-        print "usage: python network_latency_test.py <ip> <n_sample> <timeout>"
-        sys.exit(1)
-        
     parser = OptionParser(usage="usage: %prog -h arg1 -s arg2 -t arg3 ")
     parser.add_option('-h', help='host used to verify the latency', nargs=1, dest='host', type='string', default=False, action='store')
     parser.add_option('-s', help='Number of sample [default=5]', nargs=1, dest='sample', type='int', default=5, action='store')
