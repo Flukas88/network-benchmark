@@ -4,9 +4,9 @@
 [![Build Status](https://travis-ci.org/Flukas88/network-benchmark.svg?branch=master)](https://travis-ci.org/Flukas88/network-benchmark)
 
 You can quickly evaluate the latency of your network and obtain mean, std, percentile, timeout data. 
-Usage is `python network_test.py -h <ip> -s <n_sample> -t <timeout>` for example you can run:
+Usage is `python network_test.py -i <ip> -s <n_sample> -t <timeout>` for example you can run:
 ```console
-python network_test.py -h 192.168.0.1 -s 50 -t 1300
+python network_test.py -i 192.168.0.1 -s 50 -t 1300
 ```
 and the output will be something like this:
 
