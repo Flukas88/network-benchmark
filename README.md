@@ -13,7 +13,5 @@ and the output will be something like this:
 ``` console
 mean latency: 19.0138426854 ms
 std latency: 91.3184052069 ms
-99% latency: 7.4905 ms
-95% latency: 7.4905 ms
 timeout: 0.2 %
 ```
