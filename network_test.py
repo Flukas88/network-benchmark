@@ -1,3 +1,4 @@
+from __future__ import division, absolute_import, print_function, unicode_literals
 import numpy
 import pexpect
 import sys
@@ -30,15 +31,15 @@ class NetworkLatencyBenchmark(object):
 
             except:
                 self.wifi_timeout = self.wifi_timeout + 1
-                print 'timeout'
+                print('timeout')
 
         self.wifi_timeout = self.wifi_timeout / float(n_sample)
         self.wifi_latency = numpy.array(self.wifi_latency)
 
     def get_results(self):
-        print 'mean latency:', numpy.mean(self.wifi_latency), 'ms'
-        print 'std latency:', numpy.std(self.wifi_latency), 'ms'
-        print 'timeout:', self.wifi_timeout * 100, '%'
+        print('mean latency:', numpy.mean(self.wifi_latency), 'ms')
+        print('std latency:', numpy.std(self.wifi_latency), 'ms')
+        print('timeout:', self.wifi_timeout * 100, '%')
 
 
 if __name__ == '__main__':
